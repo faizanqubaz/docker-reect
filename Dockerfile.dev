@@ -1,0 +1,19 @@
+# create an operating server
+FROM node:alpine
+
+
+# install the dependenciews
+FROM node:alpine
+
+
+# install the dependenciews
+WORKDIR '/app'
+COPY package.json .
+RUN npm install
+COPY . .
+
+
+# cmd
+CMD ["npm","start"]
+
+
